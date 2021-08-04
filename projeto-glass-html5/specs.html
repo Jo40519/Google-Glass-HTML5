@@ -51,7 +51,13 @@
 <p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p> 
 
 <section id="conteudo">
-    <img src="_imagens/glass-esquema-marcado.jpg" alt="">
+    <img src="_imagens/glass-esquema-marcado.jpg" usemap="#meu-mapa">
+    <map name="meu-mapa">
+        <area shape="rect" coords="179, 208, 267, 250" href="google-glass.html#tela" target="janela" alt="Artigo da tela">
+        <area shape="circle" coords="157, 243, 27, 26" href="google-glass.html#camera" target="janela" alt="Artigo da camera">
+        <area shape="circle" coords="67, 42, 23, 21" href="google-glass.html#bateria" target="janela" alt="">
+        <area shape="poly" coords="27, 147, 80, 216, 82, 246, 26, 164" href="google-glass.html#sensores" target="janela" alt="">
+    </map>
     <iframe src="google-glass.html" name="janela" id="frame-spec" frameborder="0"></iframe>
 </section>
 </article>
