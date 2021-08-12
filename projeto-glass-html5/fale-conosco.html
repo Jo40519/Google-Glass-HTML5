@@ -6,6 +6,7 @@
     <title>Tudo sobre Google Glass</title>
 
     <link rel="stylesheet" href="_css/estilo.css">
+    <link rel="stylesheet" href="_css/form.css">
 </head>
 
 <script lenguage ="javascript" src="_javascript/funcoes.js"></script>
@@ -36,39 +37,55 @@
 </nav>
     </header>
 
+<section id="corpo-full">
+    <article id="noticia-principal">
+        <header id="cabecalho-artigo">
+            <hgroup>
+<h3>Fale Conosco > &nbsp; Contato</h3>
+<h1>Formulário de Contato</h1>
+<h2>por Gustavo Guanabara</h2>
+<h3 class="direita">Atualizado em 01/Maio/2013</h3>
+        </hgroup>
+    </header>
+    
+<form action="">
+<fieldset id="usuario"> 
+<legend> Identificação do Usuário</legend>
+    <p> <label for="cnome"> Nome:</label> <input type="text" name="tnome" id="cnome" size="20" maxlength="30" placeholder="Nome Completo"> </p>
+    <p> <label for="csenha"> Senha:</label><input type="password" name="tsenha" id="csenha" size="8" maxlength="8" placeholder="8 digítos"> </p>
+    <p><label for="cMail"> E-mail:</label> <input type="email" name="tMail" id="cMail" size="20" maxlength="20" placeholder="Digte o seu email..."> </p>
+    <fieldset id="sexo"> <legend>Sexo:</legend> 
+        <input type="radio" name="sexo" id="cMasc" checked> <label for="cMasc">Masculino</label> <br> 
+        <input type="radio" name="sexo" id="cFem"> <label for="cFem">Feminino</label> </fieldset>
+    <p> Data de Nascimento: <input type="date" name="cNasc" id="tNasc"> </p>
+</fieldset>
 
-Fale Conosco > Contato
-Formulário de Contato
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
-
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
-
-Endereço do Usuário
-    Logradouro:
-    Número:
+<fieldset id="endereco">
+<legend>Endereço do Usuário</legend>
+    <p> <label for="tRua"> Logradouro:</label> <input type="text" name="tRua" id="tRua" size="13" maxlength="80" placeholder="Rua, Av ..."> </p>
+    <p> <label for="tNum"></label> Número: <input type="number" name="tNum" id="cNum" min="0" max="99999" placeholder="Número da sua casa"> </p>
     Estado:
     Cidade:
+</fieldset>
 
-Mensagem do Usuário
+<fieldset id="mensagem">
+<legend>Mensagem do Usuário</legend>
     Grau de Urgência:
     Mensagem:
+</fieldset>
 
-Quero um Google Glass
+<fieldset id="pedido">
+<legend>Quero um Google Glass</legend>
     Gostaria de adquirir um Google Glass quando disponível
     Cor:
     Quantidade:
     Preço Total: R$
-
+</fieldset>
 
 [BOTÃO ENVIAR]
+        </form>
+    </article>
+</section>
 
 <footer id="rodape">
     <p> &copy;Copyright 2013 - by João Vitor Lobato<br>
