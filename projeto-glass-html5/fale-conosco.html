@@ -11,6 +11,14 @@
 
 <script lenguage ="javascript" src="_javascript/funcoes.js"></script>
 
+<script>
+    function calc_total() {
+        var qtd = parseInt(document.getElementById('cQtd').value);
+        tot = qtd * 1500
+        document.getElementById('cTot').value = tot;
+    }
+</script>
+
 <body>
 
     <div id="Interface">
@@ -48,7 +56,7 @@
         </hgroup>
     </header>
     
-<form action="mailto:jaolobato85@gmail.com" method="POST" id="fContato">
+<form action="mailto:jaolobato85@gmail.com" method="POST" id="fContato" oninput="calc_total();">
 <fieldset id="usuario"> 
 <legend> Identificação do Usuário</legend>
     <p> <label for="cnome"> Nome:</label> <input type="text" name="tnome" id="cnome" size="40" maxlength="40" placeholder="Nome Completo"> </p>
@@ -108,11 +116,13 @@
         <label for="cPed"> Gostaria de adquirir um Google Glass quando disponível</label></p> 
     <p> <label for="cCor">Cor:</label>
     <input type="color" name="tCor" id="cCor" value="#0000ff" > </p> 
-    <p> <label for=""> Quantidade:</label></p>
-    <p> <label for=""> Preço Total: R$</p></label>
+    <p> <label for=""> Quantidade:</label>
+    <input type="number" id="cQtd" name="tQtd" min="0" max="5" value="0"></p>
+    <p> <label for=""> Preço Total: R$</label>
+    <input type="text" name="tTot" id="cTot" placeholder="Total a pagar" readonly ></p>
 </fieldset>
 
-[BOTÃO ENVIAR]
+<input type="image" src="_imagens/botao-enviar.png">
         </form>
     </article>
 </section>
